@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// Hola amigos del Bach 40
+// Hola amigos del Bach 40, esto es una prueba
 
 function App() {
   return (
