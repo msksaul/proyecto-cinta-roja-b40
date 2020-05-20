@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// Hola amigos del Bach 40, esto es una prueba 2222
+// otro comentario de prueba
 function App() {
   return (
     <div className="App">
