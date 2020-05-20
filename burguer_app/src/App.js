@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// Hola amigos
+// Hola amigos del Bach 40
 
 function App() {
   return (
