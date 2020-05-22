@@ -110,10 +110,10 @@ code {
 }
 
 .custom-btn {
-  background: black;
+  backgroun: white ;
   border-radius: var(--border-radius-small);
   padding: 14px 24px;
-  color: black;
+  color:white;
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-normal);
   text-transform: uppercase;

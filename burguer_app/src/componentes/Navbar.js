@@ -15,12 +15,12 @@ function Navbar() {
                     </div>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav ml-lg-auto">
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a href="#home" className="nav-link smoothScroll">Inicio</a>
                             </li>
                             <li className="nav-item">
                                 <a href="./menu" className="nav-link smoothScroll">Ordena</a>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <a href="#className" className="nav-link smoothScroll">Carrito</a>
                             </li>
