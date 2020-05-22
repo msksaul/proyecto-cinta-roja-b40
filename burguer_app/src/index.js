@@ -4,6 +4,7 @@ import './index.css';
 //import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import Compra from './componentes/Compra'
 import Home from './componentes/Home'
@@ -18,7 +19,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home}/>
-        <Route path='/compra' exact component={Compra}/>
+      
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,

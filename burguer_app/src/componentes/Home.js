@@ -11,6 +11,7 @@ function Menu() {
 
     const[menus,setMenus] = useState([])
     const[isOpen,setIsOpen] = useState(false)
+    const[carrito,setCarrito]=useState([])
 
     useEffect(()=>{
         axios.get('https://menu-90c38.firebaseio.com/menus.json')
@@ -30,7 +31,7 @@ function Menu() {
         }).catch((error)=>{
             alert(error)
         })
-    })
+    },[isOpen])
     return (
         <div className='App'>
         <Carrusel></Carrusel>
@@ -50,6 +51,10 @@ function Menu() {
                             file={menu.image}
                             descripcion={menu.description}
                             precio={menu.price}
+                            edit={()=>{
+                                setIsOpen(true)
+                                setCarrito([...carrito,menu])
+                            }}
                             />
                         )
                         })}
@@ -59,7 +64,7 @@ function Menu() {
             </div>
             
         </div>
-        <Compra open={isOpen} close={setIsOpen}/>
+        <Compra carrito={carrito} open={isOpen} close={setIsOpen}/>
         </div>
         
     )

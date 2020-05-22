@@ -10,7 +10,7 @@ function Item(props){
                     </div>
                     <img src={props.file} className="img-fluid" alt="Image"/>
                     <div className="mask-icon">
-                        <a className="cart" href="/compra">Agregar a carrito</a>
+                        <a className="cart" ><button onClick={()=>(props.edit(true))} className='carritobtn'>Agregar a carrito</button></a>
                     </div>
                 </div>
                 <div className="why-text">
