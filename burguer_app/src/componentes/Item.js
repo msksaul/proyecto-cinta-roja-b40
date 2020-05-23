@@ -8,9 +8,9 @@ function Item(props){
                     <div className="type-lb">
                         <p className="sale">{props.nombre}</p>
                     </div>
-                    <img src={props.file} className="img-fluid" alt="Image"/>
+                    <img src={props.file} className="img-fluid" alt=""/>
                     <div className="mask-icon">
-                        <a className="cart" ><button onClick={()=>(props.edit(true))} className='carritobtn'>Agregar a carrito</button></a>
+                        <a className="cart"><button onClick={()=>(props.edit())} className='carritobtn'>Agregar a carrito</button></a>
                     </div>
                 </div>
                 <div className="why-text">

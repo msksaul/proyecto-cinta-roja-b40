@@ -33,7 +33,7 @@ function Menu() {
         })
     },[isOpen])
     return (
-        <div className='App'>
+        <div>
         <Carrusel></Carrusel>
         <div>
         <Navbar></Navbar>
@@ -53,7 +53,7 @@ function Menu() {
                             precio={menu.price}
                             edit={()=>{
                                 setIsOpen(true)
-                                setCarrito([...carrito,menu])
+                                setCarrito([menu])
                             }}
                             />
                         )
@@ -64,7 +64,7 @@ function Menu() {
             </div>
             
         </div>
-        <Compra carrito={carrito} open={isOpen} close={setIsOpen}/>
+        <Compra carrito={carrito} open={isOpen} close={setIsOpen} />   
         </div>
         
     )
